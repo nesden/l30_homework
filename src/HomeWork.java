@@ -3,16 +3,22 @@ import java.util.Arrays;
 public class HomeWork {
     public static void main(String[] args) {
 
+        System.out.println("example for for");
         for (int i = 0; i <= 30; i+=2) {
-            System.out.println(i);
+
+            if (i==30) {
+                System.out.print(i+".");
+                break;
+            }
+            System.out.print(i+",");
         }
 
-        System.out.println("\n");
+        System.out.println("example for while");
 
         int countWhile = 0;
         while (countWhile <= 30) {
             System.out.println(countWhile);
-            countWhile++;
+            countWhile+=2;
         }
 
         System.out.println("for:");
